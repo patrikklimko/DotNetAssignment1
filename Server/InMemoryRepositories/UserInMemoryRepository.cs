@@ -3,7 +3,7 @@ using RepositoryContracts;
 
 namespace InMemoryRepositories;
 
-public class UserInMemoryRepository 
+public class UserInMemoryRepository : IUserRepository
 {
     List<User> users = new List<User>();
 
@@ -51,7 +51,12 @@ public class UserInMemoryRepository
 
         return Task.FromResult(user);
     }
-    
+
+    public IQueryable<User> GetMany()
+    {
+        throw new NotImplementedException();
+    }
+
 
     public IQueryable<User> GetManyAsync()
     {
