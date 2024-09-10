@@ -3,10 +3,9 @@ using RepositoryContracts;
 
 namespace InMemoryRepositories;
 
-public class CommentInMemoryRepository : ICommentRepository
+public class CommentInMemoryRepository 
 {
     List<Comment> comments = new List<Comment>();
-    private ICommentRepository _commentRepositoryImplementation;
 
     public Task<Comment> AddAsync(Comment comment)
     {
@@ -52,7 +51,7 @@ public class CommentInMemoryRepository : ICommentRepository
 
         return Task.FromResult(comment);
     }
-
+    
 
     public IQueryable<Comment> GetManyAsync()
     {

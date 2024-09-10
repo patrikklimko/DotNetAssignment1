@@ -6,7 +6,6 @@ namespace InMemoryRepositories;
 public class PostInMemoryRepository 
 {
     List<Post> posts = new List<Post>();
-
     public Task<Post> AddAsync(Post post)
     {
         post.Id = posts.Any()
@@ -51,10 +50,9 @@ public class PostInMemoryRepository
 
         return Task.FromResult(post);
     }
-
+    
     public IQueryable<Post> GetManyAsync()
     {
         return posts.AsQueryable();
     }
-
 }
