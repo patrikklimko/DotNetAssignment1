@@ -7,12 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="">
+    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/DeletePostView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/DeleteUserVIew.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/CliApp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/InMemoryRepositories/CommentInMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/InMemoryRepositories/CommentInMemoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/InMemoryRepositories/PostInMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/InMemoryRepositories/PostInMemoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/InMemoryRepositories/UserInMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/InMemoryRepositories/UserInMemoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/DeleteCommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/DeleteCommentView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ListPostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ListCommentsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ListPostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ListPostsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +40,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Entities/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b4f8b29071cfcf73e927671b936ba53110f1b613a1cc9bef4fc4f07dd0fbe9/Exception.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/CLI/UI/CliApp.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/CommentInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/PostInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/UserInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -96,7 +105,7 @@
       <workItem from="1725865709307" duration="8443000" />
       <workItem from="1725966124883" duration="76000" />
       <workItem from="1725966220839" duration="8486000" />
-      <workItem from="1725977380817" duration="347000" />
+      <workItem from="1725977380817" duration="4273000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -226,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725976185037</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=".">
+      <option name="closed" value="true" />
+      <created>1725978097447</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1725978097447</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
