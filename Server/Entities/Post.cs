@@ -16,9 +16,5 @@ public class Post
         UserId = userId;
         User = user;
     }
-
-    public Post(string title, string content, int userId)
-    {
-        throw new NotImplementedException();
-    }
+    
 }
