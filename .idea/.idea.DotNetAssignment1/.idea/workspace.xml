@@ -7,18 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/DeletePostView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/DeleteUserVIew.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/CreateCommentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/DeleteCommentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/DeleteCommentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ListPostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageComments/ListCommentsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/CreatePostView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ListPostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ListPostsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManageUsers/ListUsersView.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +58,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -106,6 +96,7 @@
       <workItem from="1725966124883" duration="76000" />
       <workItem from="1725966220839" duration="8486000" />
       <workItem from="1725977380817" duration="4273000" />
+      <workItem from="1727120382349" duration="3250000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -243,7 +234,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725978097447</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changes">
+      <option name="closed" value="true" />
+      <created>1727122767928</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727122767928</updated>
+    </task>
+    <task id="LOCAL-00019" summary=".">
+      <option name="closed" value="true" />
+      <created>1727123635164</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727123635164</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +266,7 @@
     <MESSAGE value="the rest" />
     <MESSAGE value="constructors" />
     <MESSAGE value="reUpload" />
+    <MESSAGE value="changes" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
