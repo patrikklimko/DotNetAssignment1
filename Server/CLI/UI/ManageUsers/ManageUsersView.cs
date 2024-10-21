@@ -34,15 +34,23 @@ public class ManageUsersView
                 case "1":
                     await new CreateUserView(userRepository).ShowAsync();
                     break;
+                case "2":
+                    await new UpdateUserView(userRepository).ShowAsync();
+                    break;
+                case "3":
+                    await new DeleteUserView(userRepository).ShowAsync();
+                    break;
                 case "4":
-                    new ListUsersView(userRepository).Show();
+                    new ListUsersView(userRepository).ShowAsync();
                     break;
                 default:
                     Console.WriteLine("Invalid option, please try again.\n\n");
                     break;
             }
+
         }
     }
+    
 
     private static void PrintOptions()
     {

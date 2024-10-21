@@ -55,7 +55,7 @@ public class PostInMemoryRepository : IPostRepository
 
     public IQueryable<Post> GetMany()
     {
-        throw new NotImplementedException();
+        return posts.AsQueryable();
     }
 
     public IQueryable<Post> GetManyAsync()

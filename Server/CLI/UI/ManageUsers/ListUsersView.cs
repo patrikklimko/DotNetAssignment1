@@ -1,5 +1,5 @@
-using Entities;
 using RepositoryContracts;
+using Entities;
 
 namespace CLI.UI.ManageUsers;
 
@@ -12,25 +12,28 @@ public class ListUsersView
         this.userRepository = userRepository;
     }
 
-    public void Show()
+    public async Task ShowAsync()
     {
         Console.WriteLine();
-        ViewUsersAsync();
-    }
-    
-    private void ViewUsersAsync()
-    {
-        IEnumerable<User> manyAsync = userRepository.GetMany();
-        List<User> users = manyAsync.OrderBy(u => u.UserId).ToList();
-        
-        Console.WriteLine("Users:");
-        Console.WriteLine("[");
-        foreach (User user in users)
+        Console.WriteLine("Enter the ID of the user you want to view:");
+        if (!int.TryParse(Console.ReadLine(), out int userId))
         {
-            Console.WriteLine($"\tID: {user.UserId}, Name: {user.Name}");
+            Console.WriteLine("Invalid input. Please enter a valid user ID.");
+            return;
         }
 
-        Console.WriteLine("]");
-        Console.WriteLine();
+        // Retrieve the user
+        var user = await userRepository.GetSingleAsync(userId);
+        if (user == null)
+        {
+            Console.WriteLine($"User with ID {userId} not found.");
+            return;
+        }
+
+        // Display user details
+        Console.WriteLine("User Details:");
+        Console.WriteLine($"ID: {user.UserId}");
+        Console.WriteLine($"Username: {user.Name}");
     }
+    
 }

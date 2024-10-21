@@ -17,4 +17,14 @@ public class Post
         User = user;
     }
     
+
+    public Post(string title, string content, int userId)
+    {
+        // Assuming you and an empty User string
+        Id = 0; //  logic to generate a unique Id
+        Title = title;
+        Content = content;
+        UserId = userId;
+        User = string.Empty; // Set User to an empty string or any default value
+    }
 }

@@ -14,6 +14,12 @@ public class Comment
         UserId = userId;
         PostId = postId;
     }
-    
 
+    public Comment()
+    {
+        CommentId = 0;
+        Text = string.Empty;
+        UserId = 0;
+        PostId = 0;
+    }
 }

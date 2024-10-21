@@ -8,7 +8,8 @@ public class ManagePostsView
     private readonly ICommentRepository commentRepository;
     private readonly IUserRepository userRepository;
 
-    public ManagePostsView(IPostRepository postRepository, ICommentRepository commentRepository, IUserRepository userRepository)
+    public ManagePostsView(IPostRepository postRepository, ICommentRepository commentRepository,
+        IUserRepository userRepository)
     {
         this.postRepository = postRepository;
         this.commentRepository = commentRepository;
@@ -36,14 +37,29 @@ public class ManagePostsView
             switch (input)
             {
                 case "1":
-                    await new CreatePostView(postRepository).ShowAsync();
+                    await new CreatePostView(postRepository,userRepository).ShowAsync();
                     break;
+                case "2":
+                    await new UpdatePostView(postRepository).ShowAsync();
+                    break;
+                
+                case "3":
+                    // Call DeletePostView to delete a post
+                    await new DeletePostView(postRepository).ShowAsync();
+                    break;
+                    
                 case "4":
-                    await new ListPostsView(postRepository, commentRepository, userRepository).ShowAsync();
-                    break;
-                case "<": return;
-                default:
-                    Console.WriteLine("Invalid option, please try again.\n\n");
+                    // Prompt the user for a post ID
+                    Console.WriteLine("Please enter the ID of the post you want to view:");
+                    if (int.TryParse(Console.ReadLine(), out int postId))
+                    {
+                        // Call SinglePostView to display the specified post
+                        await new SinglePostView(postRepository, commentRepository, userRepository, postId).ShowAsync();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid post ID. Please try again.");
+                    }
                     break;
             }
         }

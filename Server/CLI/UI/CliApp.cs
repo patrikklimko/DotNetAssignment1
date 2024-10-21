@@ -57,7 +57,7 @@ public class CliApp
     private static void PrintMainMenu()
     {
         // The three double quotes are used to write a multiline string in C#, which keeps the formatting.
-        const string menuOptions = """
+        const string menuOptions = """ 
                                    Please select:
                                    1) Manage posts
                                    2) Manage users

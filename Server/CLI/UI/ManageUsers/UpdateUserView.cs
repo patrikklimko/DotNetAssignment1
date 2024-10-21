@@ -1,12 +1,13 @@
 using RepositoryContracts;
+using Entities;
 
 namespace CLI.UI.ManageUsers;
 
-public class DeleteUserView
+public class UpdateUserView
 {
     private readonly IUserRepository userRepository;
 
-    public DeleteUserView(IUserRepository userRepository)
+    public UpdateUserView(IUserRepository userRepository)
     {
         this.userRepository = userRepository;
     }
@@ -14,7 +15,7 @@ public class DeleteUserView
     public async Task ShowAsync()
     {
         Console.WriteLine();
-        Console.WriteLine("Enter the ID of the user you want to delete:");
+        Console.WriteLine("Enter the ID of the user you want to update:");
         if (!int.TryParse(Console.ReadLine(), out int userId))
         {
             Console.WriteLine("Invalid input. Please enter a valid user ID.");
@@ -29,17 +30,18 @@ public class DeleteUserView
             return;
         }
 
-        // Confirm deletion
-        Console.WriteLine($"Are you sure you want to delete user '{user.Name}'? (y/n):");
-        string confirmation = Console.ReadLine()?.ToLower();
-        if (confirmation == "y")
+        Console.WriteLine($"Current username: {user.Name}");
+        Console.WriteLine("Enter a new username (leave blank to keep the current username):");
+        string newUsername = Console.ReadLine() ?? "";
+
+        // Update the user with new values
+        if (!string.IsNullOrEmpty(newUsername))
         {
-            await userRepository.DeleteAsync(userId);
-            Console.WriteLine("User deleted successfully!");
+            user.Name = newUsername;
         }
-        else
-        {
-            Console.WriteLine("User deletion cancelled.");
-        }
+
+        // Save the updated user
+        await userRepository.UpdateAsync(user);
+        Console.WriteLine("User updated successfully!");
     }
 }

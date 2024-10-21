@@ -6,29 +6,33 @@ namespace CLI.UI.ManagePosts;
 public class CreatePostView
 {
     private readonly IPostRepository postRepository;
+    private readonly IUserRepository userRepository; // Added user repository
 
-    public CreatePostView(IPostRepository postRepository)
+    public CreatePostView(IPostRepository postRepository, IUserRepository userRepository)
     {
         this.postRepository = postRepository;
+        this.userRepository = userRepository; // Initialize the user repository
+    }
+
+    public CreatePostView(IPostRepository postRepository1)
+    {
+        throw new NotImplementedException();
     }
 
     public Task ShowAsync()
     {
         Console.WriteLine();
-        return CreatePostAsync(); // this method returns a Task. I don't need to await the task here, so I just pass it on to the caller to await it instead.
+        return CreatePostAsync(); 
     }
 
-    // I don't need to await anything in this method, so it's not async. But it does return a Task, which can be awaited elsewhere, when needed.
-    private Task CreatePostAsync()
+    private async Task CreatePostAsync()
     {
         while (true)
         {
             Console.WriteLine("You are creating a post.");
             Console.WriteLine("Please insert post title:");
             string? title = null;
-            
-            // keep asking for input, until it's not empty.
-            // if < is entered, cancel the post creation.
+
             while (string.IsNullOrEmpty(title))
             {
                 title = Console.ReadLine();
@@ -41,16 +45,13 @@ public class CreatePostView
                 if ("<".Equals(title))
                 {
                     Console.WriteLine("Post creation cancelled.");
-                    
-                    // return a completed task, to indicate that the post creation was cancelled. Normally I would just "return;", but this is a Task-returning method, so I need to return a Task.
-                    return Task.CompletedTask; 
+                    return; // Cancel post creation
                 }
             }
 
             Console.WriteLine("Please insert post content:");
             string? content = null;
-            
-            // again, keep asking for input, until it's not empty. And check for exit.
+
             while (string.IsNullOrEmpty(content))
             {
                 content = Console.ReadLine();
@@ -63,7 +64,7 @@ public class CreatePostView
                 if ("<".Equals(content))
                 {
                     Console.WriteLine("Post creation cancelled.");
-                    return Task.CompletedTask;
+                    return; // Cancel post creation
                 }
             }
 
@@ -71,7 +72,6 @@ public class CreatePostView
 
             int userId;
 
-            // You should recognize this pattern by now.
             while (true)
             {
                 string? input = Console.ReadLine();
@@ -83,14 +83,20 @@ public class CreatePostView
 
                 if ("<".Equals(input))
                 {
-                    Console.WriteLine("User creation cancelled.");
-                    return Task.CompletedTask;
+                    Console.WriteLine("Post creation cancelled.");
+                    return; // Cancel post creation
                 }
 
                 if (int.TryParse(input, out userId))
                 {
-                    // TODO check if user exists
-                    break;
+                    // Check if user exists
+                    var user = await userRepository.GetSingleAsync(userId); // Fetch user by ID
+                    if (user == null)
+                    {
+                        Console.WriteLine("User not found. Please enter a valid User ID.");
+                        continue; // Ask for user ID again
+                    }
+                    break; // Valid user ID
                 }
                 else
                 {
@@ -98,11 +104,11 @@ public class CreatePostView
                 }
             }
 
-            // Then print out the information, and ask for confirmation.
-            
+            // Print out the information and ask for confirmation.
             Console.WriteLine("You are about to create a post.");
             Console.WriteLine("Do you want to proceed? (y/n)");
             string? confirmation = null;
+
             while (true)
             {
                 confirmation = Console.ReadLine();
@@ -122,14 +128,14 @@ public class CreatePostView
                 break;
             }
 
-            switch (confirmation.ToLower())
+            switch (confirmation)
             {
-                case "y": return AddPostAsync(title, content, userId); // This method returns a Task. I don't need to await it here, as the return will exit the method, so I just return it to the caller to await it.
+                case "y":
+                    await AddPostAsync(title, content, userId); // Await AddPostAsync to ensure completion
+                    break;
                 case "n":
-                {
-                    Console.WriteLine("User creation cancelled.");
-                    return Task.CompletedTask;
-                }
+                    Console.WriteLine("Post creation cancelled.");
+                    return; // Cancel post creation
                 default:
                     Console.WriteLine("Invalid option, please try again.\n\n");
                     break;
@@ -137,10 +143,10 @@ public class CreatePostView
         }
     }
 
-    // add post to the repository.
+    // Add post to the repository.
     private async Task AddPostAsync(string title, string content, int userId)
     {
-        Post post = new(1,"Today","again arms",1,"Tomas");
+        Post post = new(title, content, userId);
         Post added = await postRepository.AddAsync(post);
         Console.WriteLine("Post created successfully, with Id: " + added.Id);
     }
