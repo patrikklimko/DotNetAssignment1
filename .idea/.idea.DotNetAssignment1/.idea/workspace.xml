@@ -5,14 +5,18 @@
     <projectFile profileName="IIS Express">Server/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="http">Server/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="https">Server/WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile>WebApplication1/WebApplication1.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/ApiContracts/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiContracts/ApiContracts.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApiContracts/ApiContracts.csproj" afterDir="false" />
+    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotNetAssignment1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAssignment1.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +40,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b4f8b29071cfcf73e927671b936ba53110f1b613a1cc9bef4fc4f07dd0fbe9/Exception.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/CLI/UI/CliApp.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/CommentInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/PostInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/patri/RiderProjects/DotNetAssignment1/Server/InMemoryRepositories/UserInMemoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -53,21 +54,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.CLI.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.CLI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.CLI">
     <configuration name="CLI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -78,6 +79,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Server/CLI/CLI.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication1" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -154,7 +173,11 @@
       <workItem from="1728457688499" duration="2188000" />
       <workItem from="1729237891270" duration="449000" />
       <workItem from="1729238356747" duration="27000" />
-      <workItem from="1729238393738" duration="12554000" />
+      <workItem from="1729238393738" duration="13376000" />
+      <workItem from="1729507193790" duration="990000" />
+      <workItem from="1729508403808" duration="333000" />
+      <workItem from="1730194941888" duration="286000" />
+      <workItem from="1730195239867" duration="329000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -340,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729506122566</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=".">
+      <option name="closed" value="true" />
+      <created>1729507139629</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1729507139629</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

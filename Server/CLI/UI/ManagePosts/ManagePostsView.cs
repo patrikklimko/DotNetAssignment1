@@ -78,4 +78,5 @@ public class ManagePostsView
                                    """;
         Console.WriteLine(menuOptions);
     }
+    
 }
