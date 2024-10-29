@@ -12,5 +12,9 @@ public class User
         Name = name;
         Password = password;
     }
-    
+
+    public User()
+    {
+        throw new NotImplementedException();
+    }
 }

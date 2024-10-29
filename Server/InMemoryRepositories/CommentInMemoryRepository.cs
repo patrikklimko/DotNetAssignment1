@@ -54,7 +54,7 @@ public class CommentInMemoryRepository : ICommentRepository
 
     public IQueryable<Comment> GetMany()
     {
-        throw new NotImplementedException();
+        return comments.AsQueryable();
     }
 
 

@@ -27,4 +27,9 @@ public class Post
         UserId = userId;
         User = string.Empty; // Set User to an empty string or any default value
     }
+
+    public Post()
+    {
+        throw new NotImplementedException();
+    }
 }

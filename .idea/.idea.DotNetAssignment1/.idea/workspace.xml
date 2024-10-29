@@ -11,12 +11,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="">
+    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="webapi">
+      <change afterPath="$PROJECT_DIR$/DTOs/CreateCommentDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/CreateUserDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/CretePostDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/GetManyCommnetsDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/GetManyPostsDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/UpdatePostDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/UpdateUserDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DTOs/UptadeCommnetDTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/CommentsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/PostsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiContract/ApiContract.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/DTOs.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiContract/Class1.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DotNetAssignment1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAssignment1.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/CLI/UI/ManagePosts/ManagePostsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Entities/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Entities/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/WebAPI/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +55,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b4f8b29071cfcf73e927671b936ba53110f1b613a1cc9bef4fc4f07dd0fbe9/Exception.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/WebAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -107,7 +123,7 @@
       </method>
     </configuration>
     <configuration name="WebApplication1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -122,7 +138,7 @@
       </method>
     </configuration>
     <configuration name="WebApplication1: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -137,7 +153,7 @@
       </method>
     </configuration>
     <configuration name="WebApplication1: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -177,7 +193,7 @@
       <workItem from="1729507193790" duration="990000" />
       <workItem from="1729508403808" duration="333000" />
       <workItem from="1730194941888" duration="286000" />
-      <workItem from="1730195239867" duration="329000" />
+      <workItem from="1730195239867" duration="3208000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -371,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729507139629</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="webapi">
+      <option name="closed" value="true" />
+      <created>1730195943445</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1730195943445</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,6 +413,7 @@
     <MESSAGE value="reUpload" />
     <MESSAGE value="changes" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="webapi" />
+    <option name="LAST_COMMIT_MESSAGE" value="webapi" />
   </component>
 </project>
