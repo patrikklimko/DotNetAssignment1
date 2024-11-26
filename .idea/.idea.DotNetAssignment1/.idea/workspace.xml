@@ -11,27 +11,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="webapi">
-      <change afterPath="$PROJECT_DIR$/DTOs/CreateCommentDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/CreateUserDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/CretePostDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/GetManyCommnetsDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/GetManyPostsDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/UpdatePostDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/UpdateUserDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DTOs/UptadeCommnetDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/CommentsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/PostsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/WebAPI/Controllers/UsersController.cs" afterDir="false" />
+    <list default="true" id="2683d885-4bd5-463a-af61-fcf878321516" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DotNetAssignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiContract/ApiContract.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DTOs/DTOs.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiContract/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotNetAssignment1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DotNetAssignment1.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Entities/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Entities/Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/WebAPI/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/WebAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/WebAPI/WebAPI.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +53,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Project.CLI.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -85,7 +67,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.CLI">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
     <configuration name="CLI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -193,7 +175,8 @@
       <workItem from="1729507193790" duration="990000" />
       <workItem from="1729508403808" duration="333000" />
       <workItem from="1730194941888" duration="286000" />
-      <workItem from="1730195239867" duration="3208000" />
+      <workItem from="1730195239867" duration="5866000" />
+      <workItem from="1731395696355" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -395,7 +378,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730195943445</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="API">
+      <option name="closed" value="true" />
+      <created>1730198707567</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730198707567</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,6 +405,7 @@
     <MESSAGE value="changes" />
     <MESSAGE value="." />
     <MESSAGE value="webapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="webapi" />
+    <MESSAGE value="API" />
+    <option name="LAST_COMMIT_MESSAGE" value="API" />
   </component>
 </project>
